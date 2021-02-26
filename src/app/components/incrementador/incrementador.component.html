@@ -1,0 +1,10 @@
+<h3>{{leyenda}}</h3>
+<div class="input-group">
+    <input #txtProgress type="number" class="form-control" name="porcentaje" [(ngModel)]="porcentaje" (ngModelChange)="onChanges(porcentaje)" min="0" max="100">
+    <button class="btn btn-outline-secondary" type="button" (click)="cambiarValor(-5)">
+        <i class="mdi mdi-minus"></i>
+    </button>
+    <button class="btn btn-outline-secondary" type="button" (click)="cambiarValor(5)">
+        <i class="mdi mdi-plus"></i>
+    </button>
+</div>
